@@ -1,7 +1,6 @@
 {
-  "name": "webpacktest",
+  "name": "webpack-template",
   "version": "1.0.0",
-  "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,22 +8,14 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
     "start": "cross-env NODE_ENV=development webpack serve --mode development --open",
-    "stats" : "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
+    "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "browserslist": "> 0.25%, not dead",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gogsh/webpackTest.git"
-  },
   "keywords": [
     "webpackTEst"
   ],
   "author": "gogsh",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gogsh/webpackTest/issues"
-  },
-  "homepage": "https://github.com/gogsh/webpackTest#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
@@ -50,7 +41,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "jquery": "^3.6.0",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "main": "index.js",
+  "description": ""
 }
